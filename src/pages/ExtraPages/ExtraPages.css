@@ -1,0 +1,280 @@
+.extra-page {
+  background: #f5f5f5;
+  min-height: 70vh;
+}
+
+.extra-hero {
+  background: #0d272b;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.extra-hero > span,
+.extra-heading > span,
+.contact-two-info > span {
+  color: #ffb900;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.extra-hero h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  margin: 20px auto;
+  max-width: 850px;
+}
+
+.extra-hero p {
+  color: #d2dddd;
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.extra-container {
+  max-width: 1200px;
+  width: 92%;
+  margin: auto;
+  padding: 75px 0;
+}
+
+.extra-heading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.extra-heading h2 {
+  color: #0d272b;
+  font-size: 34px;
+}
+
+.extra-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.extra-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.extra-card > svg {
+  color: #2451e6;
+}
+
+.extra-card h3,
+.blog-two-card h3,
+.blog-three-card h3 {
+  color: #0d272b;
+  font-size: 21px;
+}
+
+.extra-card p,
+.blog-two-card p,
+.blog-three-card p {
+  color: #777;
+  line-height: 1.7;
+}
+
+.extra-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+  color: #777;
+  font-size: 12px;
+}
+
+.extra-meta span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.extra-card a,
+.blog-two-card a,
+.blog-three-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #2451e6;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.extra-category {
+  color: #2451e6;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.blog-two-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.blog-two-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.blog-two-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.blog-two-card > div {
+  padding: 25px;
+}
+
+.blog-three-list {
+  display: grid;
+  gap: 25px;
+}
+
+.blog-three-card {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.blog-three-card img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.extra-search {
+  background: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.extra-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.contact-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.contact-two-info,
+.contact-two-form {
+  background: white;
+  padding: 35px;
+  border-radius: 12px;
+}
+
+.contact-two-info h2 {
+  color: #0d272b;
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+.contact-two-info p {
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.contact-two-info div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+  color: #0d272b;
+}
+
+.contact-two-info div svg {
+  color: #2451e6;
+}
+
+.contact-two-form h2 {
+  color: #0d272b;
+  margin-top: 0;
+}
+
+.contact-two-form label {
+  display: block;
+  margin: 15px 0 8px;
+  color: #0d272b;
+  font-weight: 600;
+}
+
+.contact-two-form input,
+.contact-two-form textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline-color: #2451e6;
+}
+
+.contact-two-form button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 20px;
+  background: #ffb900;
+  color: #0d272b;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.contact-success {
+  text-align: center;
+  padding: 50px 10px;
+}
+
+@media (max-width: 800px) {
+  .extra-grid,
+  .blog-two-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact-two {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .extra-hero {
+    padding: 70px 20px;
+  }
+
+  .extra-grid,
+  .blog-two-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-three-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog-three-card img {
+    width: 100%;
+  }
+}
